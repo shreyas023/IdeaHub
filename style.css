@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('images/background.png');
+    background-color: #070707;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+
+nav{
+    background-color: #ebe8e2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    font-family: 'Brasika', sans-serif;
+}
+.logo img{
+    height: 60px;
+    cursor: pointer;
+}
+.nav-items{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.nav-item{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    color: #070707;
+    text-decoration: none;
+}
+
+/* landing page  */
+.container{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    gap: 20px;
+}
+.title-sponsor img{
+    height: 60px;
+}
+.heading{
+    font-size: 50px;
+    font-weight: 700;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #ebe8e2;
+}

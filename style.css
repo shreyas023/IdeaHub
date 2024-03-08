@@ -54,7 +54,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 40px;
     font-family: Brasika;
     font-weight: 400;
     font-style: normal;
@@ -76,7 +76,7 @@ nav {
 }
 .nav-item {
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     text-decoration: none;
     color: #070707;

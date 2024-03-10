@@ -372,6 +372,12 @@ nav {
 #id-team {
     width: 600px;
 }
+#team h1{
+    margin-bottom: 20px;
+    margin-right: 200px;
+    float:right;
+    align-self: flex-end;
+}
 /* loader  */
 .loader-wrapper {
     width: 100vw;

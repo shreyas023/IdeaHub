@@ -607,7 +607,7 @@ nav {
         display: block;
     }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
     #id-team {
         width: 300px;
         height: auto;

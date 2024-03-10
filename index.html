@@ -15,7 +15,14 @@
 </head>
 
 <body>
-
+    <div class="loader-wrapper">
+        <div class="loader">
+          <video class="loader" autoplay loop muted>
+            <source src="images/loader.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     <nav>
         <div class="logo">
             <a href="#top"><img src="images/IdeaHub(black).png" alt="IdeaHub"></a>
@@ -42,18 +49,29 @@
                 </a>
             </ul>
         </div>
+        <div class="menu-btn">
+            <button class="dropdown-btn" onclick="displayMenu()">≡</button>	
+        </div>
     </nav>
+    <div id="menu" class="dropdown">
+        <a href="#aboutus" onclick="displayMenu()">Our Story</a>
+        <a href="#team" onclick="displayMenu()">Team</a>
+        <a href="#schedule" onclick="displayMenu()">Schedule</a>
+        <a href="#insights" onclick="displayMenu()">Insights</a>
+        <a href="#partners" onclick="displayMenu()">Partners</a>
+        <a href="#contact" onclick="displayMenu()">Contact</a>
+    </div>
 
 
     <section id="home">
         <div class="container">
             <div class="title-sponsor">
-                <img src="images/TechCider (white no_bg).png" alt="" height="70px">
-                <img src="images/X.webp" alt="" height="50px">
-                <img src="images/infinix_logo1.png" alt="" height="100px">
+                <img src="images/TechCider (white no_bg).png" alt="" id="techcider">
+                <img src="images/X.webp" alt="" id="x">
+                <img src="images/infinix_logo1.png" alt=""  id="infinix">
             </div>
             <div>presents</div>
-            <img src="images/IdeaHub(white).png" alt="" height="150px">
+            <img src="images/IdeaHub(white).png" alt="" id="mascot">
             <div class="heading">THE ULTIMATE TECH CHALLENGE</div>
             <div style="margin-top: 20px;">powered by</div>
             <img src="images/unstop_logo(white).png" alt="" height="40px">
@@ -76,13 +94,15 @@
                     solitude.
                 </p>
             </div>
-            <img src="images/team.jpg" alt="" width="600px">
-
+            <div>
+            <img src="images/team.jpg" alt="" id="id-team">
+            <span>Team IdeaHub</span>
+                </div>
         </div>
     </section>
 
     <section id="team" class="sec">
-        <h1 class="body_heading" style="margin-right: 200px;margin-bottom: 20px;" align="right">Team</h1>
+        <h1 class="body_heading">Team</h1>
         <div>
             <p class="body_text">
                 In the heart of the forest, where whispers dance among the trees, a lone traveler wandered.
@@ -93,10 +113,14 @@
         </div>
         <div class="team">
             <div class="images">
-                <p>Techcider Image goes here</p>
+                <img src="images/techcider-team.jpeg" alt="">
+                <h2>TechCider Club</h2>
+                <p>We, TechCider, are the mixologists of innovation, blending creativity with code. From AI to web dev, we’re stirring up solutions for real-world challenges. From ideation to execution, we’re here to make your ideas come to life. Join us on this flavorful journey through Industry 4.0, where learning is our secret ingredient and experimentation is our favorite cocktail. Sip, code, repeat!</p>
             </div>
             <div class="images">
-                <p>infinix Image goes here</p>
+                <img src="images/infinix-team.jpg" alt="">
+                <h2>Infinix Club</h2>
+                <p>We, Infinix, are the architects of AI and ML innovation. Our vision? To move forward fearlessly in this dynamic domain, unlocking the potential of artificial intelligence and machine learning. From educating our members through workshops and sessions to spreading awareness about AI’s transformative impact, we’re here to code, learn, and shape the future—one algorithm at a time!</p>
             </div>
         </div>
 
@@ -106,15 +130,15 @@
         <h1 class="body_heading" style="float: right;margin-bottom: 30px;">Schedule</h1>
         <div>
             <div class="schedule">
-                <p class="body_text" style="font-size: 30px;">11th-14th March, 2024</p>
+                <p class="body_text">11th-14th March, 2024</p>
                 <img src="images\Trivia (no_bg).png" style="size: 100%;" alt="Trivia">
             </div>
             <div class="schedule">
                 <img src="images\Mindspace (no_bg).png" style="size: 100%;" alt="Trivia">
-                <p class="body_text" style="font-size: 30px;">15th March, 2024</p>
+                <p class="body_text">15th March, 2024</p>
             </div>
             <div class="schedule">
-                <p class="body_text" style="font-size: 30px;">16th March, 2024</p>
+                <p class="body_text">16th March, 2024</p>
                 <img src="images\Launchpad (no_bg).png" style="size: 100%;" alt="Trivia">
             </div>
         </div>
@@ -128,7 +152,7 @@
             <div class="col">
                 <p>#DAY 00</p>
             </div>
-            <p class="body_text" style="font-size: 16px;" align="left">
+            <p class="body_text" align="left">
                 <b> Day #00 - “Trivia”</b>, is a 40 minute Quiz Session hosted on
                 Unstop, with 30 MCQs for each participating team to
                 tackle. With only 80 seconds per question and time ticking
@@ -140,7 +164,7 @@
             <div class="col">
                 <p>#DAY 01</p>
             </div>
-            <p class="body_text" style="font-size: 16px; " align="left">
+            <p class="body_text" align="left">
                 <b>Day #01 -“Mindspace”</b>, round involves understanding
                 problem statements which are received from the industry
                 experts, and developing potential solutions, and
@@ -152,7 +176,7 @@
             <div class="col">
                 <p>#DAY 02</p>
             </div>
-            <p class="body_text" style="font-size: 16px;" align="left">
+            <p class="body_text" align="left">
                 <b>Day#02 - “Launchpad”</b>, starts with creation of a
                 comprehensive presentation of the proposed solution, and
                 initiating the implementation phase. The final presentations
@@ -164,17 +188,17 @@
 
     <section id="partners" class="sec">
         <div class="sponsors">
-            <h1 class="body_heading" style="margin-bottom: 50px;">Our Partners</h1>
+            <h1 class="body_heading">Our Partners</h1>
 
             <div class="partners">
-                <img src="images/unstop_logo(white).png" alt="" height="80px">
-                <img src="images/wolfram(white_self).png" alt="" height="80px">
-                <img src="images/academor-removebg-preview.png" alt="" height="80px">
+                <img src="images/unstop_logo(white).png" alt="">
+                <img src="images/wolfram(white_self).png" alt="">
+                <img src="images/academor-removebg-preview.png" alt="">
             </div>
             <div class="partners">
-                <img src="images/3rd-time-charm.jpg" alt="" height="80px">
-                <img src="images/madwits-removebg-preview.png" alt="" height="80px">
-                <img src="images/rosies-sweet.png" alt="" height="80px">
+                <img src="images/3rd-time-charm.jpg" alt="">
+                <img src="images/madwits-removebg-preview.png" alt="">
+                <!-- <img src="images/rosies-sweet.png" alt="" height="80px"> -->
             </div>
         </div>
 
@@ -203,11 +227,11 @@
                 
                 <a href="https://unstop.com/o/3QytUFK?lb=2vDqTG4&utm_medium=Share&utm_source=shortUrl" rel="noopener"
                     target="_blank">
-                    <button class="btn" style="border: 3px solid #f25e3e; font-size: 14px;">REGISTER NOW</button>
+                    <button class="btn" style="border: 3px solid #f25e3e;">REGISTER NOW</button>
                 </a>
                 <a href="images/IdeaHub  The Ultimate Tech Challenge - Events Brochure.pdf" rel="noopener"
                     target="_blank" download>
-                    <button class="btn" style="color: white;background-color: #f25e3e; font-size: 14px; display: flex; align-items: center;gap: 5px;">
+                    <button class="btn" style="color: white;background-color: #f25e3e; display: flex; align-items: center;gap: 5px; border: 2px solid black;">
                         BROCHURE
                         <img src="images/download.webp" alt="" height="20px">
                     </button>
@@ -216,6 +240,32 @@
         </div>
     </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    
+      $.get('loader.html', function (data) {
+      $('#loading').replaceWith(data);
+    });
+
+
+    $(window).on('load', function () {
+      setTimeout(removeLoader, 2700); // Wait for page load PLUS two seconds
+    });
+
+    function removeLoader() {
+      $('.loader-wrapper').fadeOut(500, function () {
+        // Fade out complete. Remove the loading div
+        $('.loader-wrapper').remove();
+        console.log('loader removed');
+      });
+    }
+
+    function displayMenu() {
+  let element = document.getElementById("menu");
+  element.classList.toggle("display-menu");
+}
+    
+  </script>
 </body>
 
 </html>
